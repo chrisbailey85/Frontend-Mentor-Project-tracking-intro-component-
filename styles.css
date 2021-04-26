@@ -53,6 +53,7 @@ body {
   text-decoration: none;
   letter-spacing: 1px;
   font-family: "Barlow Condensed", sans-serif;
+  cursor: pointer;
 }
 .nav__item:last-child {
   border-top: 1px solid var(--grayish-blue);
@@ -203,6 +204,8 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  cursor: pointer;
+  transition: opacity 0.5s;
 }
 .cta__paragraph {
   font-size: 0.7rem;
@@ -337,5 +340,14 @@ footer a {
   }
   .cta {
     width: 70%;
+  }
+}
+
+@media (pointer: fine) {
+  .btn:hover {
+    opacity: 0.8;
+  }
+  .nav__link:hover {
+    text-decoration: underline;
   }
 }
